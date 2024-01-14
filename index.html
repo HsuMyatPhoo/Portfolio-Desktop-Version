@@ -167,7 +167,7 @@
         <a href="mailto:sumyatphoo2030@gmail.com"><i class="fa-solid fa-m"></i></a>
     </div> 
     <!-- <button type="button">Get My Resume</button> -->
-    <a href="Hsu Myat Phoo-update1.pdf" download class="button">Get My Resume</a>
+    <a href="mycvform.pdf" download class="button">Get My Resume</a>
 </div>
 
 <div id="detail" class="details">
@@ -244,11 +244,12 @@
         If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
         I’d love to help with it!
     </p>
-    <form action="">
-        <input type="text" class="name" placeholder="Your Name">
-        <input type="text" class="email" placeholder="loremipsum@gmail.com">
-        <textarea name="" id="" cols="35" rows="10" placeholder="Write your message here"></textarea>
-        <button>Get in touch</button>
+    <form action="https://formspree.io/f/mwkgkpnd" method="POST" id="form" >
+        <input type="text" name="name" id="name" maxlength="30" placeholder="Alexandra Loremipsum" title="Alexandra Loremipsum" required>
+        <input type="email" name="email" id="email" placeholder="alexandra@gmail.com" required>
+        
+        <textarea name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
+        <button type="submit" onclick="submitform()">Get in touch</button>
     </form>
 </div>
 </section>
