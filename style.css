@@ -696,7 +696,7 @@ header .navbar a {
 }
 
 .contact-me:hover p {
-  animation: movetext 1s ease-in;
+  animation: movetext 1.5s ease-in;
 }
 
 @keyframes movetext {
@@ -792,6 +792,7 @@ header .navbar a {
   .contact-me {
     border-top-left-radius: 200px;
     padding: 5em 0;
+    overflow: hidden;
   }
 
   .contact-me p {
@@ -819,5 +820,19 @@ header .navbar a {
   .contact-me form button {
     font-size: 17px;
     padding: 15px 25px;
+  }
+
+  .contact-me:hover p {
+    animation: movetext 2s ease-in;
+  }
+
+  @keyframes movetext {
+    from {
+      transform: translate(200%);
+    }
+
+    to {
+      transform: translate(0%);
+    }
   }
 }
